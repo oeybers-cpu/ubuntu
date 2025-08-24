@@ -128,13 +128,13 @@
             border-radius: 8px;
             background: rgba(0, 255, 255, 0.05);
             border: 1px solid rgba(0, 255, 255, 0.1);
-            transition: all 极 0.3s ease;
+            transition: all 0.3s ease;
             font-size: 0.9rem;
             text-align: center;
         }
 
         .sidebar-link:hover {
-            background: rgba(0, 255, 255, 极 0.15);
+            background: rgba(0, 255, 255, 0.15);
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
             transform: translateY(-2px);
         }
@@ -168,7 +168,7 @@
             color: transparent;
             text-transform: uppercase;
             letter-spacing: 2.25px;
-            text-shadow: 0 0 11.25px rgba极(0, 255, 255, 0.5);
+            text-shadow: 0 0 11.25px rgba(0, 255, 255, 0.5);
             font-family: 'Orbitron', sans-serif;
             font-weight: 700;
             position: relative;
@@ -205,7 +205,7 @@
 
         .contact-card {
             background: var(--card-bg);
-            border: 1px solid rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 极 0.1);
             border-radius: 11.25px;
             padding: 15px;
             max-width: 600px;
@@ -285,7 +285,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            aspect-ratio: 1/1; /* Makes the cards square */
+            /* Removed fixed aspect ratio for automatic height adjustment */
         }
 
         .article-card::before {
@@ -305,10 +305,10 @@
             transform: translateY(-7.5px);
             box-shadow: 0 11.25px 30px rgba(0, 0, 0, 0.4);
             border-color: rgba(0, 255, 255, 0.4);
-极        }
+        }
 
         .article-card:hover::before {
-            transform: scale极X(1);
+            transform: scaleX(1);
         }
 
         .article-card h3 {
@@ -333,7 +333,7 @@
             line-height: 1.6;
             margin-bottom: 15px;
             flex-grow: 1;
-            text-shadow: 0 极 0 4px rgba(255, 255, 255, 0.2);
+            text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
             overflow-y: auto;
         }
 
@@ -411,7 +411,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90极deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: 0.5s;
         }
 
@@ -480,8 +480,7 @@
             }
             
             .article-card {
-                aspect-ratio: auto;
-                min-height: 300px;
+                min-height: auto;
             }
             
             h1 {
@@ -542,7 +541,7 @@
         <img src="https://coffeeking.com.au/wp-content/uploads/2024/03/the-integration-of-coffee-into-traditional-african-societiesf86i.jpg-TSQB.jpg" alt="Ubuntu Academic Literacy" class="sidebar-image">
         
         <div class="sidebar-links">
-            <a href="https://www.researchgate.net/publication/350870059_Embedding_Ubuntu_Principles_into_Dialectic_Argumentation_and极_Academic_Writing" class="sidebar-link" target="_blank">
+            <a href="https://www.researchgate.net/publication/350870059_Embedding_Ubuntu_Principles_into_Dialectic_Argumentation_and_Academic_Writing" class="sidebar-link" target="_blank">
                 Ubuntu principles in academic writing
             </a>
             <a href="https://noyam.org/wp-content/uploads/2025/02/JELT2025612.pdf" class="sidebar-link" target="_blank">
@@ -551,7 +550,7 @@
             <a href="https://www.researchgate.net/publication/388081527_An_Inclusive_African_Theory_of_Academic_Literacy" class="sidebar-link" target="_blank">
                 African theory of academic literacy
             </a>
-            <a href极="https://scielo.org.za/s极cielo.php?script=sci_arttext&pid=S2307-62672023000200004" class="sidebar-link" target="_blank">
+            <a href="https://scielo.org.za/scielo.php?script=sci_arttext&pid=S2307-62672023000200004" class="sidebar-link" target="_blank">
                 Ubuntu as valued capacity
             </a>
             <a href="https://www.researchgate.net/publication/274374017_The_African_Philosophy_of_Ubuntu_in_South_African_Education" class="sidebar-link" target="_blank">
@@ -570,7 +569,7 @@
                 <img src="https://www.sotheycan.org/wp-content/uploads/2018/08/community.jpg" alt="Ubuntu Concept" class="header-image">
                 
                 <div class="contact-card">
-                    <h2></i> Core Principle</h2>
+                    <h2><i class="fas fa-star"></i> Core Principle</h2>
                     <p style="color: #ccc; font-size: 0.8rem; margin-top: 10px;">"Umuntu ngumuntu ngabantu" (I am because we are) - Ubuntu emphasizes our interconnectedness, community, and shared humanity in academic contexts.</p>
                 </div>
             </header>
@@ -594,7 +593,7 @@
                 
                 <!-- Academic Resources -->
                 <div class="article-card">
-                    <h3></i> Academic Resources</h3>
+                    <h3><i class="fas fa-graduation-cap"></i> Academic Resources</h3>
                     <div class="article-content">
                         <p>Explore our collection of resources designed to help educators and students integrate Ubuntu principles into academic writing and critical thinking. These materials provide practical approaches for combining African philosophical perspectives with modern educational practices.</p>
                         <p>Our resources include lesson plans, writing frameworks, and assessment tools that emphasize community, dialogue, and mutual understanding in the learning process.</p>
@@ -603,14 +602,14 @@
                         <span class="meta-tag">Education</span>
                         <span class="meta-tag">Resources</span>
                     </div>
-                    <a href="https://oeybers-cpu.github.io/a_lit_models/" class="article-link" target="_blank">
+                    <a href="极 https://oeybers-cpu.github.io/a_lit_models/" class="article-link" target="_blank">
                         Explore Resources
                     </a>
                 </div>
                 
                 <!-- Community Principle -->
                 <div class="article-card">
-                    <h3><i class=</i> Community</h3>
+                    <h3><i class="fas fa-users"></i> Community</h3>
                     <div class="article-content">
                         <p>Recognising that our identities are formed in relationship with others, Ubuntu foregrounds the importance of community in knowledge creation and academic discourse.</p>
                         <p><strong>Key aspects:</strong></p>
@@ -637,7 +636,7 @@
                             <li>Peer review as mutual growth rather than criticism</li>
                             <li>Assessment that values collaboration</li>
                             <li>Recognition of diverse knowledge systems</li>
-                            <li极>Dialogue across different epistemological traditions</li>
+                            <li>Dialogue across different epistemological traditions</li>
                         </ul>
                     </div>
                     <div class="article-meta">
@@ -660,7 +659,7 @@
                         </ul>
                     </div>
                     <div class="article-meta">
-                        <span class="meta-tag">Principle</span>
+                        <span class="meta极-tag">Principle</span>
                         <span class="meta-tag">Communication</span>
                     </div>
                 </div>
@@ -687,7 +686,7 @@
 
             <div class="copyright">
                 <div class="university-logo">
-                    <svg viewBox="0 0 100 30" fill="#9d4edd" aria-hidden="true">
+                    <svg viewBox="0 极 0 100 30" fill="#9d4edd" aria-hidden="true">
                         <path d="M10,15 Q20,5 30,15 T50,15 T70,15 T90,15" stroke="#0ff" stroke-width="2" fill="none"/>
                         <circle cx="50" cy="15" r="5" fill="#0ff"/>
                         <text x="50" y="25" text-anchor="middle" fill="#aaa" font-size="8">UBUNTU RESEARCH</text>
