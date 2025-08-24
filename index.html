@@ -15,15 +15,15 @@
         }
 
         :root {
-            --primary: #4fc3f7;
-            --secondary: #29b6f6;
-            --accent: #0288d1;
+            --primary: #0ff;
+            --secondary: #f0f;
+            --accent: #9d4edd;
             --dark: #0a0a14;
             --darker: #050508;
             --light: #f0f0f0;
             --card-bg: rgba(20, 20, 30, 0.7);
             --sidebar-width: 280px;
-            --lighter-accent: #81d4fa;
+            --lighter-blue: #6bd5ff;
         }
 
         body {
@@ -46,9 +46,9 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(79, 195, 247, 0.05) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(41, 182, 246, 0.05) 0%, transparent 20%),
-                radial-gradient(circle at 50% 50%, rgba(2, 136, 209, 0.03) 0%, transparent 30%);
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 50% 50%, rgba(157, 78, 221, 0.03) 0%, transparent 30%);
             pointer-events: none;
             z-index: -2;
         }
@@ -60,8 +60,8 @@
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(rgba(79, 195, 247, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(79, 195, 247, 0.03) 1px, transparent 1px);
+                linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
             background-size: 40px 40px;
             pointer-events: none;
             z-index: -1;
@@ -74,7 +74,7 @@
             left: 25px;
             z-index: 1000;
             background: rgba(20, 20, 30, 0.7);
-            border: 1px solid rgba(79, 195, 247, 0.2);
+            border: 1px solid rgba(0, 255, 255, 0.2);
             color: var(--primary);
             width: 50px;
             height: 50px;
@@ -85,13 +85,13 @@
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
-            box-shadow: 0 0 15px rgba(79, 195, 247, 0.2);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
         }
 
         .back-button:hover {
-            background: rgba(79, 195, 247, 0.2);
+            background: rgba(0, 255, 255, 0.2);
             transform: translateX(-5px);
-            box-shadow: 0 0 20px rgba(79, 195, 247, 0.4);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
         }
 
         /* Sidebar styling */
@@ -99,7 +99,7 @@
             width: var(--sidebar-width);
             padding: 20px;
             background: var(--card-bg);
-            border: 1px solid rgba(79, 195, 247, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.1);
             border-radius: 11.25px;
             margin-right: 30px;
             backdrop-filter: blur(10px);
@@ -112,7 +112,7 @@
             width: 100%;
             border-radius: 8px;
             margin-bottom: 20px;
-            border: 1px solid rgba(79, 195, 247, 0.2);
+            border: 1px solid rgba(0, 255, 255, 0.2);
         }
 
         .sidebar-links {
@@ -126,16 +126,16 @@
             text-decoration: none;
             padding: 12px 15px;
             border-radius: 8px;
-            background: rgba(79, 195, 247, 0.05);
-            border: 1px solid rgba(79, 195, 247, 0.1);
+            background: rgba(0, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 255, 0.1);
             transition: all 0.3s ease;
             font-size: 0.9rem;
             text-align: center;
         }
 
         .sidebar-link:hover {
-            background: rgba(79, 195, 247, 0.15);
-            box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+            background: rgba(0, 255, 255, 0.15);
+            box-shadow: 极 0 15px rgba(0, 255, 255, 0.5);
             transform: translateY(-2px);
         }
 
@@ -153,33 +153,10 @@
             text-align: center;
             padding: 30px 0 15px;
             position: relative;
-            background: linear-gradient(to right, rgba(79, 195, 247, 0.1), transparent);
-            border-bottom: 1px solid rgba(79, 195, 247, 0.2);
+            background: linear-gradient(to right, rgba(0, 255, 255, 0.1), transparent);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
             margin-bottom: 22.5px;
             border-radius: 0 0 15px 15px;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(79, 195, 247, 0.1), 
-                rgba(41, 182, 246, 0.1), 
-                rgba(2, 136, 209, 0.1),
-                transparent);
-            animation: headerShine 8s infinite linear;
-            z-index: -1;
-        }
-
-        @keyframes headerShine {
-            0% { left: -100%; }
-            100% { left: 100%; }
         }
 
         h1 {
@@ -191,17 +168,11 @@
             color: transparent;
             text-transform: uppercase;
             letter-spacing: 2.25px;
-            text-shadow: 0 0 11.25px rgba(79, 195, 247, 0.5);
+            text-shadow: 0 0 11.25px rgba(0, 255, 255, 0.5);
             font-family: 'Orbitron', sans-serif;
             font-weight: 700;
             position: relative;
             display: inline-block;
-            animation: pulse 3s infinite alternate;
-        }
-
-        @keyframes pulse {
-            0% { text-shadow: 0 0 11.25px rgba(79, 195, 247, 0.5); }
-            100% { text-shadow: 0 0 20px rgba(79, 195, 247, 0.8), 0 0 30px rgba(79, 195, 247, 0.6); }
         }
 
         h1::after {
@@ -222,16 +193,24 @@
             margin: 11.25px auto 15px;
             line-height: 1.6;
         }
+        
+        .header-image {
+            width: 200px;
+            margin: 15px auto;
+            border-radius: 8px;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
 
         .contact-card {
             background: var(--card-bg);
-            border: 1px solid rgba(79, 195, 247, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.1);
             border-radius: 11.25px;
             padding: 15px;
             max-width: 600px;
             margin: 22.5px auto;
             backdrop-filter: blur(10px);
-            box-shadow: 0 0 22.5px rgba(79, 195, 247, 0.1);
+            box-shadow: 0 0 22.5px rgba(0, 255, 255, 0.1);
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
@@ -252,7 +231,7 @@
 
         .contact-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 7.5px 30px rgba(79, 195, 247, 0.3);
+            box-shadow: 0 7.5px 30px rgba(0, 255, 255, 0.3);
         }
 
         .contact-card:hover::before {
@@ -282,11 +261,11 @@
 
         .contact-card a:hover {
             color: var(--secondary);
-            text-shadow: 0 0 11.25px rgba(41, 182, 246, 0.7);
+            text-shadow: 0 0 11.25px rgba(255, 0, 255, 0.7);
             background: rgba(255, 255, 255, 0.1);
         }
 
-        /* Articles grid made of equal squares on large screens */
+        /* Square grid layout */
         .articles-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -296,7 +275,7 @@
 
         .article-card {
             background: var(--card-bg);
-            border: 1px solid rgba(79, 195, 247, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.1);
             border-radius: 11.25px;
             padding: 18.75px;
             transition: all 0.4s ease;
@@ -305,8 +284,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            aspect-ratio: 1/1; /* square cards */
-            min-height: 320px; /* ensures presence on very wide screens */
+            aspect-ratio: 1/1; /* Makes the cards square */
         }
 
         .article-card::before {
@@ -325,7 +303,7 @@
         .article-card:hover {
             transform: translateY(-7.5px);
             box-shadow: 0 11.25px 30px rgba(0, 0, 0, 0.4);
-            border-color: rgba(79, 195, 247, 0.4);
+            border-color: rgba(0, 255, 255, 0.4);
         }
 
         .article-card:hover::before {
@@ -333,7 +311,7 @@
         }
 
         .article-card h3 {
-            color: var(--lighter-accent);
+            color: var(--lighter-blue);
             font-size: 1.1rem;
             margin-bottom: 11.25px;
             line-height: 1.4;
@@ -341,7 +319,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            text-shadow: 0 0 8px rgba(129, 212, 250, 0.6);
+            text-shadow: 0 0 8px rgba(107, 213, 255, 0.6);
         }
 
         .article-card h3 i {
@@ -355,7 +333,7 @@
             margin-bottom: 15px;
             flex-grow: 1;
             text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
-            overflow-y: auto; /* allow scrolling within square */
+            overflow-y: auto;
         }
 
         .article-content p {
@@ -372,17 +350,17 @@
         }
 
         .citation {
-            background: rgba(79, 195, 247, 0.1);
+            background: rgba(0, 255, 255, 0.1);
             color: var(--primary);
             padding: 3.75px 9px;
             border-radius: 15px;
             font-size: 0.7rem;
-            border: 1px solid rgba(79, 195, 247, 0.2);
+            border: 1px solid rgba(0, 255, 255, 0.2);
             display: inline-block;
             margin: 5px 0;
         }
 
-        .article-meta {
+极 .article-meta {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -390,32 +368,32 @@
         }
 
         .meta-tag {
-            background: rgba(79, 195, 247, 0.1);
+            background: rgba(0, 255, 255, 0.1);
             color: var(--primary);
             padding: 3.75px 9px;
             border-radius: 15px;
             font-size: 0.6375rem;
-            border: 1px solid rgba(79, 195, 247, 0.2);
-            text-shadow: 0 0 4px rgba(79, 195, 247, 0.3);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            text-shadow: 0 0 4px rgba(0, 255, 255, 0.3);
         }
 
         .new-tag {
-            background: rgba(2, 136, 209, 0.2);
+            background: rgba(157, 78, 221, 0.2);
             color: var(--accent);
-            border-color: rgba(2, 136, 209, 0.3);
-            text-shadow: 0 0 4px rgba(2, 136, 209, 0.3);
+            border-color: rgba(157, 78, 221, 0.3);
+            text-shadow: 0 0 4px rgba(157, 78, 221, 0.3);
         }
 
         .article-link {
             display: inline-block;
             color: var(--light);
-            background: linear-gradient(90deg, rgba(79, 195, 247, 0.2), rgba(2, 136, 209, 0.2));
+            background: linear-gradient(90deg, rgba(0, 255, 255, 0.2), rgba(157, 78, 221, 0.2));
             padding: 7.5px 15px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            border: 1px solid rgba(79, 195, 247, 0.3);
+            border: 1px solid rgba(0, 255, 255, 0.3);
             text-align: center;
             width: 100%;
             font-family: 'Orbitron', sans-serif;
@@ -439,7 +417,7 @@
         .article-link:hover {
             background: linear-gradient(90deg, var(--primary), var(--accent));
             color: var(--darker);
-            box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
             transform: translateY(-2.25px);
         }
 
@@ -452,12 +430,23 @@
             padding: 30px 0 15px;
             color: #777;
             font-size: 0.675rem;
-            border-top: 1px solid rgba(79, 195, 247, 0.1);
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
             margin-top: 22.5px;
         }
 
         .copyright p {
             margin: 6px 0;
+        }
+
+        .copyright a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .copyright a:hover {
+            color: var(--secondary);
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
         }
 
         .university-logo {
@@ -489,7 +478,6 @@
                 grid-template-columns: 1fr;
             }
             
-            /* Allow cards to grow naturally for readability on narrow screens */
             .article-card {
                 aspect-ratio: auto;
                 min-height: 300px;
@@ -501,6 +489,10 @@
             
             .subtitle {
                 font-size: 0.75rem;
+            }
+            
+            .header-image {
+                width: 150px;
             }
         }
 
@@ -527,6 +519,10 @@
                 width: 40px;
                 height: 40px;
             }
+            
+            .header-image {
+                width: 120px;
+            }
         }
     </style>
 </head>
@@ -540,23 +536,23 @@
     
     <!-- Sidebar with links and images -->
     <div class="sidebar">
-        <img src="https://github.com/oeybers-cpu/multi1/blob/main/1755804090.png?raw=true" alt="Ubuntu Academic Literacy" class="sidebar-image">
+        <img src="https://coffeeking.com.au/wp-content/uploads/2024/03/the-integration-of-coffee-into-traditional-african-societiesf86i.jpg-TSQB.jpg" alt="Ubuntu Academic Literacy" class="sidebar-image">
         
         <div class="sidebar-links">
             <a href="https://www.researchgate.net/publication/350870059_Embedding_Ubuntu_Principles_into_Dialectic_Argumentation_and_Academic_Writing" class="sidebar-link" target="_blank">
-                Ubuntu Principles in Academic Writing
+                Ubuntu principles in academic writing
             </a>
-            <a href="https://oeybers-cpu.github.io/a_lit_models/" class="sidebar-link" target="_blank">
-                Academic Literacy Models
+            <a href="https://noyam.org/wp-content/uploads/2025/02/JELT2025612.pdf" class="sidebar-link" target="_blank">
+                Fostering Ubuntu in higher education
             </a>
             <a href="https://www.researchgate.net/publication/388081527_An_Inclusive_African_Theory_of_Academic_Literacy" class="sidebar-link" target="_blank">
-                African Theory of Academic Literacy
+                African theory of academic literacy
             </a>
-            <a href="https://oeybers-cpu.github.io/Fanon/" class="sidebar-link" target="_blank">
-                Fanon and Academic Literacy
+            <a href="https://scielo.org.za/scielo.php?script=sci_arttext&pid=S2307-62672023000200004" class="sidebar-link" target="_blank">
+                Ubuntu as valued capacity
             </a>
-            <a href="https://oeybers-cpu.github.io/ancient_writers/" class="sidebar-link" target="_blank">
-                Ancient African Writing
+            <a href="https://www.researchgate.net/publication/274374017_The_African_Philosophy_of_Ubuntu_in_South_African_Education" class="sidebar-link" target="_blank">
+                African philosophy of Ubuntu
             </a>
         </div>
     </div>
@@ -568,8 +564,10 @@
                 <h1>Ubuntu Academic Literacy</h1>
                 <p class="subtitle">Integrating African Philosophy with Modern Education</p>
                 
+                <img src="https://github.com/oeybers-cpu/multi1/blob/main/ubuntu-concept.png?raw=true" alt="Ubuntu Concept" class="header-image">
+                
                 <div class="contact-card">
-                    <h2><i class="fas fa-graduation-cap"></i> Core Principle</h2>
+                    <h2><i class="fas fa-quote-left"></i> Core Principle</h2>
                     <p style="color: #ccc; font-size: 0.8rem; margin-top: 10px;">"Umuntu ngumuntu ngabantu" (I am because we are) - Ubuntu emphasizes our interconnectedness, community, and shared humanity in academic contexts.</p>
                 </div>
             </header>
@@ -600,7 +598,7 @@
                     </div>
                     <div class="article-meta">
                         <span class="meta-tag">Education</span>
-                        <span class="meta-tag">Resources</span>
+                        <span class="meta极ag">Resources</span>
                     </div>
                     <a href="https://oeybers-cpu.github.io/a_lit_models/" class="article-link" target="_blank">
                         Explore Resources
@@ -620,7 +618,7 @@
                             <li>Education that builds community rather than competition</li>
                         </ul>
                     </div>
-                    <div class="article-meta">
+                    <div class极="article-meta">
                         <span class="meta-tag">Principle</span>
                         <span class="meta-tag new-tag">Core Value</span>
                     </div>
@@ -647,7 +645,7 @@
                 
                 <!-- Dialogue Principle -->
                 <div class="article-card">
-                    <h3><i class="fas fa-comments"></i> Dialogue</h3>
+                    <h3><i class="fas fa-comments"></i> Dialogue</极>
                     <div class="article-content">
                         <p>Valuing conversation and exchange of ideas as a path to understanding. Ubuntu emphasizes respectful dialogue where all voices are heard and valued.</p>
                         <p><strong>In academic practice:</strong></p>
@@ -686,14 +684,15 @@
 
             <div class="copyright">
                 <div class="university-logo">
-                    <svg viewBox="0 0 100 30" fill="#0288d1" aria-hidden="true">
-                        <path d="M10,15 Q20,5 30,15 T50,15 T70,15 T90,15" stroke="#4fc3f7" stroke-width="2" fill="none"/>
-                        <circle cx="50" cy="15" r="5" fill="#4fc3f7"/>
+                    <svg viewBox="0 0 100 30" fill="#9d4edd" aria-hidden="true">
+                        <path d="M10,15 Q20,5 30,15 T50,15 T70,15 T90,15" stroke="#0ff" stroke-width="2" fill="none"/>
+                        <circle cx="50" cy="15" r="5" fill="#0ff"/>
                         <text x="50" y="25" text-anchor="middle" fill="#aaa" font-size="8">UBUNTU RESEARCH</text>
                     </svg>
                 </div>
                 <p>© 2023 Ubuntu Academic Literacy Research | University of Pretoria</p>
                 <p>Integrating African philosophical perspectives with modern education</p>
+                <p>Explore more: <a href="https://oeybers-cpu.github.io/a_lit_models/" target="_blank">Academic Literacy Models</a></p>
             </div>
         </div>
     </div>
@@ -717,9 +716,9 @@
             // Add pulse animation to contact card
             const contactCard = document.querySelector('.contact-card');
             setInterval(() => {
-                contactCard.style.boxShadow = '0 0 30px rgba(79, 195, 247, 0.3)';
+                contactCard.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.3)';
                 setTimeout(() => {
-                    contactCard.style.boxShadow = '0 0 20px rgba(79, 195, 247, 0.1)';
+                    contactCard.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.1)';
                 }, 1000);
             }, 3000);
             
